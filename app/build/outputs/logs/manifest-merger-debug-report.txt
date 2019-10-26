@@ -1,0 +1,336 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/64bcaaba9f3e7f00d797523a597ba3ce/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/f7f13d83f259935d6ac1126a9dc45e9d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/88fa9e0854ebbbe1b1fbbfda702d4e8b/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/ea9bb96703fbd9ffdfa7cddcf60f93b7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/358700f4be8a00e8a1951f6ac57a71da/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/0853407dc70f3bf4c7957cd8359ad27b/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e71d3bf490bb666f62fe42d3f92ab0f3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4f49ae689c516a1284b001f8481ff1f3/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/1faf30d7d1bf229dbf338c550e8afe7e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/6f6350409a1273999a0c62d8a2369d10/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/33e3855d0bece81aa41075468959b34c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/71abfa27a838a43f6182791ce6178d75/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/acd4886ce4c09d643bba86e205e1f8d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d299cd043b209cc6e7c823ee072a50a9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2bd670e414a67ce823a7c5e45229f6a3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7b42757d48ad3b757020caaa19e97989/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8f575f21caf5d5141dbc017f728a3755/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/92ffdfad33f75f597692cddfe91def52/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/245f9927389fccc5a1c71f38f8bed012/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/8796c6e61b622a8ec303ab0bc1dac6ac/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/6ac54b7820d53cf88df576e8e744db52/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/25777f68068f836839798a6fc10089aa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/120f104921e9bb4031a65ccb495ed2a5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/0291a940a850ef64f1fd3ca07a66f712/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/3eddf148cb4a7881a684b358dabe397e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/df64301e3b1b63f8751de3fe63473e96/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/26896d7f772a01ed0c8fbf66f6dabce2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/82b79b656954b51031b4338715e37967/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/984c521ebced0336af0d6a2883f7ef24/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/e056bb879a5911aab7df8a8f109f6049/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/d6172f87568eeadc1ba9e0dd55912828/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/4ce1cca1f2f7e0af774dfde5148e3b5d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/6cafaa6e7025295406f319985975d4c0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d297f279b9d12361d596a9639cf431ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/03c4e9e5ffae10c839e5741c0dac7b0e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2feb1644d38acf989b33cd8f49d34210/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4b8fc3cfe7296971c7c990439ba94d24/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fa26491a252aaf0954875235bf1f29c4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f32701ad24aed795912e68f1ab78504e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/544d64369ff42591d25fb57033548734/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7e0fa27b349d627c005c4b36947d72bc/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+	package
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:3:5-62
+		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:4:5-35
+uses-feature#android.hardware.camera
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:6:5-60
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:6:19-57
+uses-permission#android.permission.CAMERA
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:8:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:10:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:11:22-77
+uses-sdk
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:14:5-44
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:14:5-44
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:14:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/64bcaaba9f3e7f00d797523a597ba3ce/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/64bcaaba9f3e7f00d797523a597ba3ce/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/f7f13d83f259935d6ac1126a9dc45e9d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/f7f13d83f259935d6ac1126a9dc45e9d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/88fa9e0854ebbbe1b1fbbfda702d4e8b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/88fa9e0854ebbbe1b1fbbfda702d4e8b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/ea9bb96703fbd9ffdfa7cddcf60f93b7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/ea9bb96703fbd9ffdfa7cddcf60f93b7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/358700f4be8a00e8a1951f6ac57a71da/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/358700f4be8a00e8a1951f6ac57a71da/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/0853407dc70f3bf4c7957cd8359ad27b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/0853407dc70f3bf4c7957cd8359ad27b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e71d3bf490bb666f62fe42d3f92ab0f3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e71d3bf490bb666f62fe42d3f92ab0f3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4f49ae689c516a1284b001f8481ff1f3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4f49ae689c516a1284b001f8481ff1f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/1faf30d7d1bf229dbf338c550e8afe7e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/1faf30d7d1bf229dbf338c550e8afe7e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/6f6350409a1273999a0c62d8a2369d10/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/6f6350409a1273999a0c62d8a2369d10/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/33e3855d0bece81aa41075468959b34c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/33e3855d0bece81aa41075468959b34c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/71abfa27a838a43f6182791ce6178d75/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/71abfa27a838a43f6182791ce6178d75/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/acd4886ce4c09d643bba86e205e1f8d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/acd4886ce4c09d643bba86e205e1f8d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d299cd043b209cc6e7c823ee072a50a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d299cd043b209cc6e7c823ee072a50a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2bd670e414a67ce823a7c5e45229f6a3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2bd670e414a67ce823a7c5e45229f6a3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7b42757d48ad3b757020caaa19e97989/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7b42757d48ad3b757020caaa19e97989/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8f575f21caf5d5141dbc017f728a3755/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8f575f21caf5d5141dbc017f728a3755/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/92ffdfad33f75f597692cddfe91def52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/92ffdfad33f75f597692cddfe91def52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/245f9927389fccc5a1c71f38f8bed012/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/245f9927389fccc5a1c71f38f8bed012/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/8796c6e61b622a8ec303ab0bc1dac6ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/8796c6e61b622a8ec303ab0bc1dac6ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/6ac54b7820d53cf88df576e8e744db52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/6ac54b7820d53cf88df576e8e744db52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/25777f68068f836839798a6fc10089aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/25777f68068f836839798a6fc10089aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/120f104921e9bb4031a65ccb495ed2a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/120f104921e9bb4031a65ccb495ed2a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/0291a940a850ef64f1fd3ca07a66f712/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/0291a940a850ef64f1fd3ca07a66f712/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/3eddf148cb4a7881a684b358dabe397e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/3eddf148cb4a7881a684b358dabe397e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/df64301e3b1b63f8751de3fe63473e96/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/df64301e3b1b63f8751de3fe63473e96/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/26896d7f772a01ed0c8fbf66f6dabce2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/26896d7f772a01ed0c8fbf66f6dabce2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/82b79b656954b51031b4338715e37967/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/82b79b656954b51031b4338715e37967/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/984c521ebced0336af0d6a2883f7ef24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/984c521ebced0336af0d6a2883f7ef24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/e056bb879a5911aab7df8a8f109f6049/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/e056bb879a5911aab7df8a8f109f6049/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/d6172f87568eeadc1ba9e0dd55912828/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/d6172f87568eeadc1ba9e0dd55912828/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/4ce1cca1f2f7e0af774dfde5148e3b5d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/4ce1cca1f2f7e0af774dfde5148e3b5d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/6cafaa6e7025295406f319985975d4c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/6cafaa6e7025295406f319985975d4c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d297f279b9d12361d596a9639cf431ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d297f279b9d12361d596a9639cf431ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/03c4e9e5ffae10c839e5741c0dac7b0e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/03c4e9e5ffae10c839e5741c0dac7b0e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2feb1644d38acf989b33cd8f49d34210/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2feb1644d38acf989b33cd8f49d34210/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4b8fc3cfe7296971c7c990439ba94d24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4b8fc3cfe7296971c7c990439ba94d24/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fa26491a252aaf0954875235bf1f29c4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fa26491a252aaf0954875235bf1f29c4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f32701ad24aed795912e68f1ab78504e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f32701ad24aed795912e68f1ab78504e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/544d64369ff42591d25fb57033548734/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/544d64369ff42591d25fb57033548734/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7e0fa27b349d627c005c4b36947d72bc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7e0fa27b349d627c005c4b36947d72bc/AndroidManifest.xml:20:5-44
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:14:5-44
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:14:5-44
+	android:maxSdkVersion
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:14:15-41
+	android:targetSdkVersion
+		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:14:5-44
+		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:14:5-44
+		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:16:5-66
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:16:22-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:18:22-78
+application
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:20:5-80:19
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/64bcaaba9f3e7f00d797523a597ba3ce/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/64bcaaba9f3e7f00d797523a597ba3ce/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/f7f13d83f259935d6ac1126a9dc45e9d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/f7f13d83f259935d6ac1126a9dc45e9d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/88fa9e0854ebbbe1b1fbbfda702d4e8b/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/88fa9e0854ebbbe1b1fbbfda702d4e8b/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/358700f4be8a00e8a1951f6ac57a71da/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/358700f4be8a00e8a1951f6ac57a71da/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/0853407dc70f3bf4c7957cd8359ad27b/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/0853407dc70f3bf4c7957cd8359ad27b/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e71d3bf490bb666f62fe42d3f92ab0f3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e71d3bf490bb666f62fe42d3f92ab0f3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4f49ae689c516a1284b001f8481ff1f3/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4f49ae689c516a1284b001f8481ff1f3/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:design:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/6f6350409a1273999a0c62d8a2369d10/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/6f6350409a1273999a0c62d8a2369d10/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/33e3855d0bece81aa41075468959b34c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/33e3855d0bece81aa41075468959b34c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/984c521ebced0336af0d6a2883f7ef24/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/984c521ebced0336af0d6a2883f7ef24/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/d6172f87568eeadc1ba9e0dd55912828/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/d6172f87568eeadc1ba9e0dd55912828/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/984c521ebced0336af0d6a2883f7ef24/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:26:9-35
+	android:label
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:25:9-37
+	android:hardwareAccelerated
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:23:9-43
+	android:fullBackupContent
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:22:9-42
+	android:icon
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:24:9-38
+	android:allowBackup
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:21:9-35
+	android:theme
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:27:9-47
+activity#com.google.android.gms.samples.vision.ocrreader.OcrOptions
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:28:9-57
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:28:19-45
+activity#com.google.android.gms.samples.vision.ocrreader.OcrOutputActivity
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:29:9-55
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:29:19-52
+activity#com.google.android.gms.samples.vision.ocrreader.FirstActivity
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:30:9-36:20
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:30:19-48
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:31:13-35:29
+action#android.intent.action.MAIN
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:34:27-74
+activity#com.google.android.gms.samples.vision.ocrreader.DictionaryActivity
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:37:9-56
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:37:19-53
+meta-data#com.google.android.gms.version
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:39:9-41:69
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4f49ae689c516a1284b001f8481ff1f3/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4f49ae689c516a1284b001f8481ff1f3/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:41:13-66
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:40:13-58
+meta-data#com.google.android.gms.vision.DEPENDENCIES
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:42:9-44:35
+	android:value
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:44:13-32
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:43:13-70
+activity#com.google.android.gms.samples.vision.ocrreader.AlarmMe
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:46:9-48:48
+	android:label
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:48:13-45
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:47:13-36
+activity#com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:50:9-52:41
+	android:label
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:52:13-38
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:51:13-47
+activity#com.google.android.gms.samples.vision.ocrreader.EditAlarm
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:54:9-56:42
+	android:label
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:56:13-39
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:55:13-38
+activity#com.google.android.gms.samples.vision.ocrreader.AlarmNotification
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:58:9-60:50
+	android:label
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:60:13-47
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:59:13-46
+activity#com.google.android.gms.samples.vision.ocrreader.Preferences
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:62:9-64:43
+	android:label
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:64:13-40
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:63:13-40
+activity#com.google.android.gms.samples.vision.ocrreader.About
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:66:9-68:37
+	android:label
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:68:13-34
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:67:13-34
+receiver#com.google.android.gms.samples.vision.ocrreader.AlarmReceiver
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:70:9-72:41
+	android:process
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:72:13-38
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:71:13-42
+receiver#com.google.android.gms.samples.vision.ocrreader.BootCompletedReceiver
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:74:9-79:20
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:74:19-56
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+category:name:android.intent.category.DEFAULT
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:75:13-78:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:76:17-79
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:76:25-76
+category#android.intent.category.DEFAULT
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:77:17-76
+	android:name
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:77:27-73
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/0853407dc70f3bf4c7957cd8359ad27b/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/0853407dc70f3bf4c7957cd8359ad27b/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/0853407dc70f3bf4c7957cd8359ad27b/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/0853407dc70f3bf4c7957cd8359ad27b/AndroidManifest.xml:24:13-79

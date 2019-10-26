@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OcrOptions">
+
+    <Button
+        android:id="@+id/btnCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorPrimary"
+        android:text="Alarms"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/btnMed"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@+id/btnCalendar"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorPrimary"
+        android:text="My Med"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/btnTranslator"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@+id/btnMed"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorPrimary"
+        android:text="Translator"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+</RelativeLayout>

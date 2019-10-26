@@ -1,24 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pawerrangers.hackgt">
+    package="com.google.android.gms.samples.vision.ocrreader"
+    android:installLocation="auto">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <uses-sdk android:maxSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="OcrReaderApp"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.AppCompat">
+        <activity android:name=".OcrOptions"></activity>
+        <activity android:name=".OcrOutputActivity" />
+        <activity android:name=".FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DictionaryActivity" />
 
         <meta-data
-            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="ocr" />
+
+        <activity
+            android:name=".AlarmMe"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".OcrCaptureActivity"
+            android:label="Read Text" />
+
+        <activity
+            android:name=".EditAlarm"
+            android:label="Edit alarm" />
+
+        <activity
+            android:name=".AlarmNotification"
+            android:label="Alarm notification" />
+
+        <activity
+            android:name=".Preferences"
+            android:label="Preferences" />
+
+        <activity
+            android:name=".About"
+            android:label="About" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote" />
+
+        <receiver android:name=".BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
     </application>
+
 </manifest>
