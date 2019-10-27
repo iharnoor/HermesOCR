@@ -97,7 +97,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         super.onCreate(bundle);
         setContentView(R.layout.ocr_capture);
 
-        GasStation gasStation = new GasStation(2.41, 3.51, "A1", 21, 32);
+        GasStation gasStation = new GasStation("A1", 2.41, 3.51, 21, 32);
 
         preview = findViewById(R.id.preview);
         graphicOverlay = findViewById(R.id.graphicOverlay);
@@ -210,6 +210,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
                 Place place = Autocomplete.getPlaceFromIntent(data);

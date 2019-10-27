@@ -1,4 +1,0 @@
-#Sat Oct 26 23:21:17 EDT 2019
-base.0=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/1
-path.0=classes.dex
-renamed.0=classes.dex
