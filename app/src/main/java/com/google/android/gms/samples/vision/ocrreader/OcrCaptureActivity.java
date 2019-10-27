@@ -18,7 +18,6 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.util.SparseArray;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
@@ -31,20 +30,20 @@ import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.samples.vision.ocrreader.Carl.MedRef;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSource;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSourcePreview;
+import com.google.android.gms.samples.vision.ocrreader.ui.camera.GasStation;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 import static com.google.android.gms.samples.vision.ocrreader.Utils.TEXTBLOCKARRAY;
+import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStations;
 
 /**
  * Activity for the Ocr Detecting app.  This app detects text and displays the value with the
@@ -131,76 +130,58 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                 if (TEXTBLOCKARRAY != null) {
                     String[] ary = TEXTBLOCKARRAY.split("\\s+");
 
-//                    Toast.makeText(OcrCaptureActivity.this, TEXTBLOCKARRAY + Arrays.toString(ary), Toast.LENGTH_SHORT).show();
                     Log.d("TEXBLOCKARRAY", TEXTBLOCKARRAY + Arrays.toString(ary));
 
                     Log.d("SplitMed", "Split String: " + ary[0]);
-                    final String medDesc = medDescription(ary);
 
-                    if (!medDesc.equals("Error")) {
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                tts.speak(medDesc, TextToSpeech.QUEUE_ADD, null, "DEFAULT");
-                                finish();
-                                Intent i = new Intent(getApplicationContext(), OcrOutputActivity.class);
-                                i.putExtra("medDesc", medDesc);
-                                startActivity(i);
-                                t.cancel();
-                            }
-                        });
+                    ArrayList<Double> gasPrices = new ArrayList<>();
+                    for (int i = 0; i < ary.length; i++) {
+                        if (isNumeric(ary[i])) {
+                            Log.d("Numeric", ary[i]);
+                            gasPrices.add(Double.parseDouble(ary[i]));
+                        }
+                        Log.d("not Numeric", ary[i]);
+                    }
+
+                    Log.d("Split String", ary[0]);
+                    Log.d("Split String", gasPrices.toString());
+
+                    Log.d("important gas prices", gasPrices.toString());
+
+                    double minPrice = 0.0;
+                    if (gasPrices.size() > 0) {
+                        minPrice = gasPrices.get(0);
+
+                        if (minPrice > 1000) {
+                            minPrice = minPrice / 1000;
+                        } else if (minPrice > 100) {
+                            minPrice = minPrice / 100;
+                        }
+
+                        gasStations.add(minPrice);
+                        Log.d("Output Station", gasStations.toString());
                     }
                 }
             }
-        }, 1000, 500);
+        }, 100, 500);
 
+        Button btn = findViewById(R.id.launchActivity);
 
-//        Runnable helloRunnable = new Runnable() {
-//            public void run() {
-//
-//                String[] ary = TEXTBLOCKARRAY.split("\\s+");
-////                String[] arr = {"spoon", "Excedrin"};
-//
-//                Toast.makeText(OcrCaptureActivity.this, TEXTBLOCKARRAY + Arrays.toString(ary), Toast.LENGTH_SHORT).show();
-//
-//                Log.d("SplitMed", "Split String: " + ary[0]);
-//                String medDesc = medDescription(ary);
-//
-////                        Toast.makeText(getApplicationContext(), medDesc, Toast.LENGTH_SHORT).show();
-//
-//                tts.speak(medDesc, TextToSpeech.QUEUE_ADD, null, "DEFAULT");
-//
-//
-//            }
-//        };
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(OcrCaptureActivity.this, gasStations.toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 
-
-//        Button launch = findViewById(R.id.launchActivity);
-//        launch.setOnClickListener(
-//                new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        String[] ary = TEXTBLOCKARRAY.split("\\s+");
-////                String[] arr = {"spoon", "Excedrin"};
-//
-//                        Toast.makeText(OcrCaptureActivity.this, TEXTBLOCKARRAY + Arrays.toString(ary), Toast.LENGTH_SHORT).show();
-//
-//                        Log.d("SplitMed", "Split String: " + ary[0]);
-//                        String medDesc = medDescription(ary);
-//
-////                        Toast.makeText(getApplicationContext(), medDesc, Toast.LENGTH_SHORT).show();
-//
-//                        tts.speak(medDesc, TextToSpeech.QUEUE_ADD, null, "DEFAULT");
-
-//                        Intent intent = new Intent(getApplicationContext(), DictionaryActivity.class);
-//                        startActivity(intent);
-//                    }
-//                }
-//        );
-
-//        ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
-//        executor.scheduleAtFixedRate(helloRunnable, 0, 2, TimeUnit.SECONDS);
-
+    public static boolean isNumeric(String strNum) {
+        try {
+            double d = Double.parseDouble(strNum);
+        } catch (NumberFormatException | NullPointerException nfe) {
+            return false;
+        }
+        return true;
     }
 
     /**

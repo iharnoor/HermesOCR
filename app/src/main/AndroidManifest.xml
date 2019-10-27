@@ -26,14 +26,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
         <activity android:name=".OcrOptions"></activity>
-        <activity android:name=".OcrOutputActivity" />
-        <activity android:name=".FirstActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".OcrOutputActivity"></activity>
+        <activity android:name=".FirstActivity"></activity>
         <activity android:name=".DictionaryActivity" />
 
         <meta-data
@@ -49,15 +43,13 @@
 
         <activity
             android:name=".OcrCaptureActivity"
-            android:label="Read Text" />
+            android:label="Read Text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <activity
-            android:name=".EditAlarm"
-            android:label="Edit alarm" />
-
-        <activity
-            android:name=".AlarmNotification"
-            android:label="Alarm notification" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".Preferences"

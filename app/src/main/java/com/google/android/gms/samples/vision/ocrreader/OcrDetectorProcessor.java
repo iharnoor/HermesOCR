@@ -22,6 +22,8 @@ import com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;
 
+import java.util.ArrayList;
+
 import static com.google.android.gms.samples.vision.ocrreader.Utils.TEXTBLOCKARRAY;
 
 /**
@@ -51,6 +53,17 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
             }
         }
     }
+
+
+    public static boolean isNumeric(String strNum) {
+        try {
+            double d = Double.parseDouble(strNum);
+        } catch (NumberFormatException | NullPointerException nfe) {
+            return false;
+        }
+        return true;
+    }
+
 
     @Override
     public void release() {

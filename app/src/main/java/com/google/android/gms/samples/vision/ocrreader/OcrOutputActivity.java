@@ -20,14 +20,14 @@ public class OcrOutputActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ocr_output);
 
         String outputStr = null;
-        tvOutput = findViewById(R.id.tvOutput);
-
-        if (getIntent().hasExtra(KEY_EXTRA)) {
-            outputStr = getIntent().getStringExtra(KEY_EXTRA);
-            tvOutput.setText(outputStr);
-        } else {
-            throw new IllegalArgumentException("Activity cannot find  extras " + KEY_EXTRA);
-        }
+//        tvOutput = findViewById(R.id.outputStrtvOutput);
+//
+//        if (getIntent().hasExtra(KEY_EXTRA)) {
+//            outputStr = getIntent().getStringExtra(KEY_EXTRA);
+//            tvOutput.setText(outputStr);
+//        } else {
+//            throw new IllegalArgumentException("Activity cannot find  extras " + KEY_EXTRA);
+//        }
 
         new Handler().postDelayed(new Runnable() {
             @Override

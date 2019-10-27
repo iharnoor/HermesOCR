@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
-INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
-INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
-INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-74:12
 MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/64bcaaba9f3e7f00d797523a597ba3ce/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/f7f13d83f259935d6ac1126a9dc45e9d/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/88fa9e0854ebbbe1b1fbbfda702d4e8b/AndroidManifest.xml:17:1-24:12
@@ -45,20 +45,20 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/harnoor/.gradle/cach
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f32701ad24aed795912e68f1ab78504e/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/544d64369ff42591d25fb57033548734/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7e0fa27b349d627c005c4b36947d72bc/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
-INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
-INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-74:12
 	package
 		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:3:5-62
 		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-74:12
 		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-82:12
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:1-74:12
 		INJECTED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:2:11-69
@@ -191,7 +191,7 @@ ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/m
 	android:name
 		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:18:22-78
 application
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:20:5-80:19
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:20:5-72:19
 MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/64bcaaba9f3e7f00d797523a597ba3ce/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/64bcaaba9f3e7f00d797523a597ba3ce/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/f7f13d83f259935d6ac1126a9dc45e9d/AndroidManifest.xml:7:5-20
@@ -235,97 +235,85 @@ ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/m
 	android:name
 		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:28:19-45
 activity#com.google.android.gms.samples.vision.ocrreader.OcrOutputActivity
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:29:9-55
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:29:9-64
 	android:name
 		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:29:19-52
 activity#com.google.android.gms.samples.vision.ocrreader.FirstActivity
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:30:9-36:20
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:30:9-60
 	android:name
 		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:30:19-48
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:31:13-35:29
-action#android.intent.action.MAIN
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:32:17-69
-	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:32:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:34:17-77
-	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:34:27-74
 activity#com.google.android.gms.samples.vision.ocrreader.DictionaryActivity
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:37:9-56
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:31:9-56
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:37:19-53
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:31:19-53
 meta-data#com.google.android.gms.version
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:39:9-41:69
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:33:9-35:69
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4f49ae689c516a1284b001f8481ff1f3/AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/4f49ae689c516a1284b001f8481ff1f3/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:41:13-66
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:35:13-66
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:40:13-58
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:34:13-58
 meta-data#com.google.android.gms.vision.DEPENDENCIES
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:42:9-44:35
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:36:9-38:35
 	android:value
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:44:13-32
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:38:13-32
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:43:13-70
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:37:13-70
 activity#com.google.android.gms.samples.vision.ocrreader.AlarmMe
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:46:9-48:48
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:40:9-42:48
 	android:label
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:48:13-45
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:42:13-45
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:47:13-36
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:41:13-36
 activity#com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:50:9-52:41
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:44:9-52:20
 	android:label
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:52:13-38
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:46:13-38
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:51:13-47
-activity#com.google.android.gms.samples.vision.ocrreader.EditAlarm
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:54:9-56:42
-	android:label
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:56:13-39
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:45:13-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:47:13-51:29
+action#android.intent.action.MAIN
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:48:17-69
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:55:13-38
-activity#com.google.android.gms.samples.vision.ocrreader.AlarmNotification
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:58:9-60:50
-	android:label
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:60:13-47
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:48:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:50:17-77
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:59:13-46
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:50:27-74
 activity#com.google.android.gms.samples.vision.ocrreader.Preferences
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:62:9-64:43
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:54:9-56:43
 	android:label
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:64:13-40
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:56:13-40
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:63:13-40
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:55:13-40
 activity#com.google.android.gms.samples.vision.ocrreader.About
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:66:9-68:37
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:58:9-60:37
 	android:label
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:68:13-34
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:60:13-34
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:67:13-34
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:59:13-34
 receiver#com.google.android.gms.samples.vision.ocrreader.AlarmReceiver
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:70:9-72:41
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:62:9-64:41
 	android:process
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:72:13-38
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:64:13-38
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:71:13-42
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:63:13-42
 receiver#com.google.android.gms.samples.vision.ocrreader.BootCompletedReceiver
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:74:9-79:20
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:66:9-71:20
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:74:19-56
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:66:19-56
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+category:name:android.intent.category.DEFAULT
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:75:13-78:29
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:67:13-70:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:76:17-79
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:68:17-79
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:76:25-76
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:68:25-76
 category#android.intent.category.DEFAULT
-ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:77:17-76
+ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:69:17-76
 	android:name
-		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:77:27-73
+		ADDED from /Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/src/main/AndroidManifest.xml:69:27-73
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/harnoor/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/0853407dc70f3bf4c7957cd8359ad27b/AndroidManifest.xml:23:9-26:75
 	android:exported

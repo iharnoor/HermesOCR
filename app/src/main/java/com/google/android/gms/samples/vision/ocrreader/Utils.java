@@ -2,9 +2,12 @@ package com.google.android.gms.samples.vision.ocrreader;
 
 import android.util.SparseArray;
 
+import com.google.android.gms.samples.vision.ocrreader.ui.camera.GasStation;
 import com.google.android.gms.vision.text.TextBlock;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Locale;
 
 public class Utils {
@@ -19,4 +22,6 @@ public class Utils {
     public static String TEXTBLOCKARRAY;
 
     public static boolean isOutputReady = false;
+
+    public static HashSet<Double> gasStations = new HashSet<>();
 }

@@ -1,4 +1,4 @@
-#Sat Oct 26 12:27:45 EDT 2019
+#Sat Oct 26 22:31:18 EDT 2019
 base.0=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/4
 path.0=classes.dex
 renamed.0=classes.dex
