@@ -103,7 +103,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         graphicOverlay = findViewById(R.id.graphicOverlay);
 
         if (!Places.isInitialized()) {
-            Places.initialize(getApplicationContext(), "AIzaSyAKQnBF8qQkoBBVBgiOwj9EjoHK0jzuE3I");
+            Places.initialize(getApplicationContext(), "AIzaSyAXKNlJL0N96MMr6FoqB2ApeRgcSC1zaPo");
         }
 
         // Set good defaults for capturing text.
