@@ -5,6 +5,8 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,17 +14,9 @@ import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-
-import androidx.annotation.NonNull;
-
-import com.google.android.gms.samples.vision.ocrreader.ui.camera.GasStation;
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.core.app.ActivityCompat;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -38,6 +32,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.samples.vision.ocrreader.Carl.MedRef;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSource;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSourcePreview;
+import com.google.android.gms.samples.vision.ocrreader.ui.camera.GasStation;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
@@ -46,18 +41,24 @@ import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.widget.Autocomplete;
 import com.google.android.libraries.places.widget.AutocompleteActivity;
 import com.google.android.libraries.places.widget.model.AutocompleteActivityMode;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.NotificationCompat;
+
 import static com.google.android.gms.samples.vision.ocrreader.Utils.TEXTBLOCKARRAY;
-import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStationsMax;
-import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStationsMin;
 
 /**
  * Activity for the Ocr Detecting app.  This app detects text and displays the value with the
@@ -89,6 +90,8 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     // A TextToSpeech engine for speaking a String value.
     private TextToSpeech tts;
 
+    GasStation gasStation = new GasStation("Klaus Gas", new HashMap<Double, Integer>(), 0, 0, 33.777281, -84.3983513);
+
     /**
      * Initializes the UI and creates the detector pipeline.
      */
@@ -96,8 +99,6 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.ocr_capture);
-
-        GasStation gasStation = new GasStation("A1", 2.41, 3.51, 21, 32);
 
         preview = findViewById(R.id.preview);
         graphicOverlay = findViewById(R.id.graphicOverlay);
@@ -146,50 +147,68 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         t.schedule(new TimerTask() {
             @Override
             public void run() {
-                System.out.println("Hello World");
                 if (TEXTBLOCKARRAY != null) {
                     String[] ary = TEXTBLOCKARRAY.split("\\s+");
 
-                    Log.d("TEXBLOCKARRAY", TEXTBLOCKARRAY + Arrays.toString(ary));
-
-                    Log.d("SplitMed", "Split String: " + ary[0]);
-
-                    ArrayList<Double> gasPrices = new ArrayList<>();
                     for (int i = 0; i < ary.length; i++) {
                         if (isNumeric(ary[i])) {
-                            Log.d("Numeric", ary[i]);
-                            gasPrices.add(Double.parseDouble(ary[i]));
+                            Double currPrice = Double.parseDouble(ary[i]);
+                            if (gasStation.getPrices().containsKey(currPrice)) {
+                                gasStation.getPrices().put(currPrice, gasStation.getPrices().get(currPrice) + 1);
+                            } else {
+                                gasStation.getPrices().put(currPrice, 1);
+                            }
                         }
-                        Log.d("not Numeric", ary[i]);
                     }
 
-                    Log.d("Split String", ary[0]);
-                    Log.d("Split String", gasPrices.toString());
 
-                    Log.d("important gas prices", gasPrices.toString());
+                    List<Integer> values = new ArrayList<>(gasStation.getPrices().values());
+                    Collections.sort(values);
+                    if (values.size() > 2) {
+                        int max = values.get(values.size() - 1);
+                        int secondMax = values.get(values.size() - 2);
 
-                    double minPrice = 0.0;
-                    double maxPrice = 0.0;
-                    if (gasPrices.size() > 0) {
-                        minPrice = gasPrices.get(0);
-                        maxPrice = gasPrices.get(gasPrices.size() - 1);
-
-                        if (minPrice > 1000) {
-                            minPrice = minPrice / 1000;
-                        } else if (minPrice > 100) {
-                            minPrice = minPrice / 100;
+                        List<Double> gasPrices = new ArrayList<>();
+                        for (Double price : gasStation.getPrices().keySet()) {
+                            if (gasStation.getPrices().get(price) == max) {
+                                gasPrices.add(price);
+                            }
                         }
 
-                        if (maxPrice > 1000) {
-                            minPrice = maxPrice / 1000;
-                        } else if (maxPrice > 100) {
-                            maxPrice = maxPrice / 100;
+                        if (gasPrices.size() == 1) {
+                            for (Double price : gasStation.getPrices().keySet()) {
+                                if (gasStation.getPrices().get(price) == secondMax) {
+                                    gasPrices.add(price);
+                                }
+                            }
                         }
 
-                        gasStationsMin.add(minPrice);
-                        gasStationsMax.add(maxPrice);
-                        Log.d("Output Station", gasStationsMin.toString());
+                        Collections.sort(gasPrices);
+                        gasStation.setRegPrice(gasPrices.get(0));
+                        gasStation.setDieselPrice(gasPrices.get(gasPrices.size() - 1));
                     }
+//                    double minPrice = 0.0;
+//                    double maxPrice = 0.0;
+//                    if (gasPrices.size() > 0) {
+//                        minPrice = gasPrices.get(0);
+//                        maxPrice = gasPrices.get(gasPrices.size() - 1);
+//
+//                        if (minPrice > 1000) {
+//                            minPrice = minPrice / 1000;
+//                        } else if (minPrice > 100) {
+//                            minPrice = minPrice / 100;
+//                        }
+//
+//                        if (maxPrice > 1000) {
+//                            minPrice = maxPrice / 1000;
+//                        } else if (maxPrice > 100) {
+//                            maxPrice = maxPrice / 100;
+//                        }
+//
+//                        gasStationsMin.add(minPrice);
+//                        gasStationsMax.add(maxPrice);
+//                        Log.d("Output Station", gasStationsMin.toString());
+//                    }
                 }
             }
         }, 100, 500);
@@ -223,7 +242,27 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                             .build(OcrCaptureActivity.this);
                     startActivityForResult(intent, 1);
                 } else {
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/dir/" + latlngs.get(0).latitude + "," + latlngs.get(0).longitude + "/33.7791502,-84.3896015/" + latlngs.get(1).latitude + "," + latlngs.get(1).longitude));
+                    NotificationManager notificationManager = getSystemService(NotificationManager.class);
+
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        int importance = NotificationManager.IMPORTANCE_DEFAULT;
+                        NotificationChannel channel = new NotificationChannel("PawerGas", "PawerGas", importance);
+                        channel.setDescription("PawerGas");
+                        // Register the channel with the system; you can't change the importance
+                        // or other notification behaviors after this
+                        notificationManager.createNotificationChannel(channel);
+                    }
+
+                    NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "PawerGas")
+                            .setSmallIcon(R.drawable.ic_notification)
+                            .setContentTitle("PawerGas")
+                            .setContentText("Regular: " + gasStation.getRegPrice() / 100.0 + "\nDiesel: " + gasStation.getDieselPrice() / 100.0)
+                            .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+
+                    notificationManager.notify(1337, builder.build());
+
+                    Toast.makeText(OcrCaptureActivity.this, "Regular: " + gasStation.getRegPrice() / 100.0 + "\nDiesel: " + gasStation.getDieselPrice() / 100.0, Toast.LENGTH_LONG).show();
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/dir/" + latlngs.get(0).latitude + "," + latlngs.get(0).longitude + "/" + gasStation.getLatitude() + "," + gasStation.getLongitude() + "/" + latlngs.get(1).latitude + "," + latlngs.get(1).longitude));
                     startActivity(browserIntent);
                 }
             } else if (resultCode == AutocompleteActivity.RESULT_ERROR) {
