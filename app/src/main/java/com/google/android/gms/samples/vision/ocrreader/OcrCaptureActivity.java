@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
+import android.net.Uri;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
@@ -27,23 +28,31 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.samples.vision.ocrreader.Carl.MedRef;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSource;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSourcePreview;
+import com.google.android.gms.samples.vision.ocrreader.ui.camera.GasStation;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
+import com.google.android.libraries.places.api.Places;
+import com.google.android.libraries.places.api.model.Place;
+import com.google.android.libraries.places.widget.Autocomplete;
+import com.google.android.libraries.places.widget.AutocompleteActivity;
+import com.google.android.libraries.places.widget.model.AutocompleteActivityMode;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import static com.google.android.gms.samples.vision.ocrreader.Utils.TEXTBLOCKARRAY;
-import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStationsMax;
-import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStationsMin;
+import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStations;
 
 /**
  * Activity for the Ocr Detecting app.  This app detects text and displays the value with the
@@ -52,7 +61,7 @@ import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStationsM
  */
 public final class OcrCaptureActivity extends AppCompatActivity {
     private static final String TAG = "OcrCaptureActivity";
-
+    List<LatLng> latlngs = new ArrayList<>();
     // Intent request code to handle updating play services if needed.
     private static final int RC_HANDLE_GMS = 9001;
 
@@ -85,6 +94,10 @@ public final class OcrCaptureActivity extends AppCompatActivity {
 
         preview = (CameraSourcePreview) findViewById(R.id.preview);
         graphicOverlay = (GraphicOverlay<OcrGraphic>) findViewById(R.id.graphicOverlay);
+
+        if (!Places.isInitialized()) {
+            Places.initialize(getApplicationContext(), "AIzaSyAKQnBF8qQkoBBVBgiOwj9EjoHK0jzuE3I");
+        }
 
         // Set good defaults for capturing text.
         boolean autoFocus = true;
@@ -148,12 +161,9 @@ public final class OcrCaptureActivity extends AppCompatActivity {
 
                     Log.d("important gas prices", gasPrices.toString());
 
-
                     double minPrice = 0.0;
-                    double maxPrice = 0.0;
                     if (gasPrices.size() > 0) {
                         minPrice = gasPrices.get(0);
-                        maxPrice = gasPrices.get(gasPrices.size() - 1);
 
                         if (minPrice > 1000) {
                             minPrice = minPrice / 1000;
@@ -161,15 +171,8 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                             minPrice = minPrice / 100;
                         }
 
-                        if (maxPrice > 1000) {
-                            minPrice = maxPrice / 1000;
-                        } else if (maxPrice > 100) {
-                            maxPrice = maxPrice / 100;
-                        }
-
-                        gasStationsMin.add(minPrice);
-                        gasStationsMax.add(maxPrice);
-                        Log.d("Output Station", gasStationsMin.toString());
+                        gasStations.add(minPrice);
+                        Log.d("Output Station", gasStations.toString());
                     }
                 }
             }
@@ -180,9 +183,39 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(OcrCaptureActivity.this, gasStationsMin.toString() + gasStationsMax.toString(), Toast.LENGTH_SHORT).show();
+                List<Place.Field> fields = Arrays.asList(Place.Field.LAT_LNG);
+
+                Intent intent = new Autocomplete.IntentBuilder(
+                        AutocompleteActivityMode.FULLSCREEN, fields)
+                        .build(OcrCaptureActivity.this);
+                startActivityForResult(intent, 1);
             }
         });
+    }
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1) {
+            if (resultCode == RESULT_OK) {
+                Place place = Autocomplete.getPlaceFromIntent(data);
+                Log.i("MainActivity", "Places: " + latlngs.toString());
+                latlngs.add(place.getLatLng());
+                List<Place.Field> fields = Arrays.asList(Place.Field.LAT_LNG);
+                if (latlngs.size() < 2) {
+                    Intent intent = new Autocomplete.IntentBuilder(
+                            AutocompleteActivityMode.FULLSCREEN, fields)
+                            .build(OcrCaptureActivity.this);
+                    startActivityForResult(intent, 1);
+                } else {
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/dir/" + latlngs.get(0).latitude + "," + latlngs.get(0).longitude +  "/33.7791502,-84.3896015/" + latlngs.get(1).latitude + "," + latlngs.get(1).longitude));
+                    startActivity(browserIntent);
+                }
+            } else if (resultCode == AutocompleteActivity.RESULT_ERROR) {
+                // TODO: Handle the error.
+                Status status = Autocomplete.getStatusFromIntent(data);
+                Log.i("MainActivity", status.getStatusMessage());
+            } else if (resultCode == RESULT_CANCELED) {
+                // The user canceled the operation.
+            }
+        }
     }
 
     public static boolean isNumeric(String strNum) {
