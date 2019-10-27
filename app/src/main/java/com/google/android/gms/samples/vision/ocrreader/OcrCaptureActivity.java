@@ -90,7 +90,10 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     // A TextToSpeech engine for speaking a String value.
     private TextToSpeech tts;
 
-    GasStation gasStation = new GasStation("Klaus Gas", new HashMap<Double, Integer>(), 0, 0, 33.777281, -84.3983513);
+
+    private static final double klausGasLatitude = 33.777281;
+    private static final double klausGasLongitude = -84.3983513;
+    GasStation gasStation = new GasStation("Klaus Gas", new HashMap<Double, Integer>(), 521, 656, 33.7833885, -84.410379);
 
     /**
      * Initializes the UI and creates the detector pipeline.
@@ -150,65 +153,55 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                 if (TEXTBLOCKARRAY != null) {
                     String[] ary = TEXTBLOCKARRAY.split("\\s+");
 
-                    for (int i = 0; i < ary.length; i++) {
-                        if (isNumeric(ary[i])) {
-                            Double currPrice = Double.parseDouble(ary[i]);
-                            if (gasStation.getPrices().containsKey(currPrice)) {
-                                gasStation.getPrices().put(currPrice, gasStation.getPrices().get(currPrice) + 1);
-                            } else {
-                                gasStation.getPrices().put(currPrice, 1);
-                            }
+                    // Filter to see if what we're looking at is gas station stuff
+                    boolean isGasStation = false;
+                    for (String s : ary) {
+                        if (s.toLowerCase().equals("regular") || s.toLowerCase().equals("diesel")) {
+                            isGasStation = true;
+                            break;
                         }
                     }
 
-
-                    List<Integer> values = new ArrayList<>(gasStation.getPrices().values());
-                    Collections.sort(values);
-                    if (values.size() > 2) {
-                        int max = values.get(values.size() - 1);
-                        int secondMax = values.get(values.size() - 2);
-
-                        List<Double> gasPrices = new ArrayList<>();
-                        for (Double price : gasStation.getPrices().keySet()) {
-                            if (gasStation.getPrices().get(price) == max) {
-                                gasPrices.add(price);
-                            }
-                        }
-
-                        if (gasPrices.size() == 1) {
-                            for (Double price : gasStation.getPrices().keySet()) {
-                                if (gasStation.getPrices().get(price) == secondMax) {
-                                    gasPrices.add(price);
+                    if (isGasStation) {
+                        for (int i = 0; i < ary.length; i++) {
+                            if (isNumeric(ary[i])) {
+                                Double currPrice = Double.parseDouble(ary[i]);
+                                if (gasStation.getPrices().containsKey(currPrice)) {
+                                    gasStation.getPrices().put(currPrice, gasStation.getPrices().get(currPrice) + 1);
+                                } else {
+                                    gasStation.getPrices().put(currPrice, 1);
                                 }
                             }
                         }
 
-                        Collections.sort(gasPrices);
-                        gasStation.setRegPrice(gasPrices.get(0));
-                        gasStation.setDieselPrice(gasPrices.get(gasPrices.size() - 1));
+                        List<Integer> values = new ArrayList<>(gasStation.getPrices().values());
+                        Collections.sort(values);
+                        if (values.size() > 2) {
+                            int max = values.get(values.size() - 1);
+                            int secondMax = values.get(values.size() - 2);
+
+                            List<Double> gasPrices = new ArrayList<>();
+                            for (Double price : gasStation.getPrices().keySet()) {
+                                if (gasStation.getPrices().get(price) == max) {
+                                    gasPrices.add(price);
+                                }
+                            }
+
+                            if (gasPrices.size() == 1) {
+                                for (Double price : gasStation.getPrices().keySet()) {
+                                    if (gasStation.getPrices().get(price) == secondMax) {
+                                        gasPrices.add(price);
+                                    }
+                                }
+                            }
+
+                            Collections.sort(gasPrices);
+                            gasStation.setRegPrice(gasPrices.get(0));
+                            gasStation.setDieselPrice(gasPrices.get(gasPrices.size() - 1));
+                            gasStation.setLatitude(klausGasLatitude);
+                            gasStation.setLongitude(klausGasLongitude);
+                        }
                     }
-//                    double minPrice = 0.0;
-//                    double maxPrice = 0.0;
-//                    if (gasPrices.size() > 0) {
-//                        minPrice = gasPrices.get(0);
-//                        maxPrice = gasPrices.get(gasPrices.size() - 1);
-//
-//                        if (minPrice > 1000) {
-//                            minPrice = minPrice / 1000;
-//                        } else if (minPrice > 100) {
-//                            minPrice = minPrice / 100;
-//                        }
-//
-//                        if (maxPrice > 1000) {
-//                            minPrice = maxPrice / 1000;
-//                        } else if (maxPrice > 100) {
-//                            maxPrice = maxPrice / 100;
-//                        }
-//
-//                        gasStationsMin.add(minPrice);
-//                        gasStationsMax.add(maxPrice);
-//                        Log.d("Output Station", gasStationsMin.toString());
-//                    }
                 }
             }
         }, 100, 500);
@@ -264,11 +257,13 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                     Toast.makeText(OcrCaptureActivity.this, "Regular: " + gasStation.getRegPrice() / 100.0 + "\nDiesel: " + gasStation.getDieselPrice() / 100.0, Toast.LENGTH_LONG).show();
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/dir/" + latlngs.get(0).latitude + "," + latlngs.get(0).longitude + "/" + gasStation.getLatitude() + "," + gasStation.getLongitude() + "/" + latlngs.get(1).latitude + "," + latlngs.get(1).longitude));
                     startActivity(browserIntent);
+                    latlngs.clear();
+                    gasStation = new GasStation("Klaus Gas", new HashMap<Double, Integer>(), 421, 456, 33.7833885, -84.410379);
                 }
             } else if (resultCode == AutocompleteActivity.RESULT_ERROR) {
                 // TODO: Handle the error.
                 Status status = Autocomplete.getStatusFromIntent(data);
-                Log.i("MainActivity", status.getStatusMessage());
+                Log.i("MainActivity",   status.getStatusMessage());
             } else if (resultCode == RESULT_CANCELED) {
                 // The user canceled the operation.
             }
