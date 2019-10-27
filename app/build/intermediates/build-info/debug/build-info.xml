@@ -5,25 +5,28 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.3.2"
-    timestamp="1572144586836"
+    timestamp="1572146474073"
     token="-1810905737060359187"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="606" />
+        duration="947" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="24" />
+        duration="45" />
     <task
         name="verifier"
-        duration="12" />
+        duration="27" />
 
+    <artifact
+        location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
     <artifact
         location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
@@ -83,8 +86,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1572143787654"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1572145839678"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
@@ -93,31 +96,28 @@
             location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
@@ -125,9 +125,12 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1572144586836"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1572146474073"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />

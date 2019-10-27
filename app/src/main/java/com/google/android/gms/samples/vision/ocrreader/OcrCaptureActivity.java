@@ -14,10 +14,15 @@ import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.samples.vision.ocrreader.ui.camera.GasStation;
+import com.google.android.material.snackbar.Snackbar;
+
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -33,7 +38,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.samples.vision.ocrreader.Carl.MedRef;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSource;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSourcePreview;
-import com.google.android.gms.samples.vision.ocrreader.ui.camera.GasStation;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
@@ -52,7 +56,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import static com.google.android.gms.samples.vision.ocrreader.Utils.TEXTBLOCKARRAY;
-import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStations;
+import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStationsMax;
+import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStationsMin;
 
 /**
  * Activity for the Ocr Detecting app.  This app detects text and displays the value with the
@@ -92,8 +97,10 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         super.onCreate(bundle);
         setContentView(R.layout.ocr_capture);
 
-        preview = (CameraSourcePreview) findViewById(R.id.preview);
-        graphicOverlay = (GraphicOverlay<OcrGraphic>) findViewById(R.id.graphicOverlay);
+        GasStation gasStation = new GasStation(2.41, 3.51, "A1", 21, 32);
+
+        preview = findViewById(R.id.preview);
+        graphicOverlay = findViewById(R.id.graphicOverlay);
 
         if (!Places.isInitialized()) {
             Places.initialize(getApplicationContext(), "AIzaSyAKQnBF8qQkoBBVBgiOwj9EjoHK0jzuE3I");
@@ -162,8 +169,10 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                     Log.d("important gas prices", gasPrices.toString());
 
                     double minPrice = 0.0;
+                    double maxPrice = 0.0;
                     if (gasPrices.size() > 0) {
                         minPrice = gasPrices.get(0);
+                        maxPrice = gasPrices.get(gasPrices.size() - 1);
 
                         if (minPrice > 1000) {
                             minPrice = minPrice / 1000;
@@ -171,8 +180,15 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                             minPrice = minPrice / 100;
                         }
 
-                        gasStations.add(minPrice);
-                        Log.d("Output Station", gasStations.toString());
+                        if (maxPrice > 1000) {
+                            minPrice = maxPrice / 1000;
+                        } else if (maxPrice > 100) {
+                            maxPrice = maxPrice / 100;
+                        }
+
+                        gasStationsMin.add(minPrice);
+                        gasStationsMax.add(maxPrice);
+                        Log.d("Output Station", gasStationsMin.toString());
                     }
                 }
             }
@@ -192,6 +208,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
             }
         });
     }
+
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
@@ -205,7 +222,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                             .build(OcrCaptureActivity.this);
                     startActivityForResult(intent, 1);
                 } else {
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/dir/" + latlngs.get(0).latitude + "," + latlngs.get(0).longitude +  "/33.7791502,-84.3896015/" + latlngs.get(1).latitude + "," + latlngs.get(1).longitude));
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/dir/" + latlngs.get(0).latitude + "," + latlngs.get(0).longitude + "/33.7791502,-84.3896015/" + latlngs.get(1).latitude + "," + latlngs.get(1).longitude));
                     startActivity(browserIntent);
                 }
             } else if (resultCode == AutocompleteActivity.RESULT_ERROR) {

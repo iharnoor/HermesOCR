@@ -2,22 +2,46 @@ package com.google.android.gms.samples.vision.ocrreader.ui.camera;
 
 public class GasStation {
 
-    double minPrice;
+    double regPrice;
+    double diesalPrice;
+
     String stationName;
-    String geolocation;
+    double longitude;
+    double latitude;
 
-    public GasStation(double minPrice, String stationName, String geolocation) {
-        this.minPrice = minPrice;
+    @Override
+    public String toString() {
+        return "GasStation{" +
+                "regPrice=" + regPrice +
+                ", diesalPrice=" + diesalPrice +
+                ", stationName='" + stationName + '\'' +
+                ", longitude=" + longitude +
+                ", latitude=" + latitude +
+                '}';
+    }
+
+    public GasStation(double regPrice, double diesalPrice, String stationName, double longitude, double latitude) {
+        this.regPrice = regPrice;
+        this.diesalPrice = diesalPrice;
         this.stationName = stationName;
-        this.geolocation = geolocation;
+        this.longitude = longitude;
+        this.latitude = latitude;
     }
 
-    public double getMinPrice() {
-        return minPrice;
+    public double getRegPrice() {
+        return regPrice;
     }
 
-    public void setMinPrice(double minPrice) {
-        this.minPrice = minPrice;
+    public void setRegPrice(double regPrice) {
+        this.regPrice = regPrice;
+    }
+
+    public double getDiesalPrice() {
+        return diesalPrice;
+    }
+
+    public void setDiesalPrice(double diesalPrice) {
+        this.diesalPrice = diesalPrice;
     }
 
     public String getStationName() {
@@ -28,21 +52,20 @@ public class GasStation {
         this.stationName = stationName;
     }
 
-    public String getGeolocation() {
-        return geolocation;
+    public double getLongitude() {
+        return longitude;
     }
 
-    public void setGeolocation(String geolocation) {
-        this.geolocation = geolocation;
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 
-    @Override
-    public String toString() {
-        return "GasStation{" +
-                "minPrice=" + minPrice +
-                ", stationName='" + stationName + '\'' +
-                ", geolocation='" + geolocation + '\'' +
-                '}';
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
     }
 }
 

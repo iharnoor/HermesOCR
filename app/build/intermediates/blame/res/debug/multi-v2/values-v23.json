@@ -4,7 +4,7 @@
             "outputFile": "/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/harnoor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/acd4886ce4c09d643bba86e205e1f8d7/res/values-v23/values-v23.xml",
+                    "source": "/Users/harnoor/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/4341d493e18b4ffe7118d6fe323502cb/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/Users/harnoor/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/e056bb879a5911aab7df8a8f109f6049/res/values-v23/values-v23.xml",
+                    "source": "/Users/harnoor/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/c02566e4add182aa72319b694abef105/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
