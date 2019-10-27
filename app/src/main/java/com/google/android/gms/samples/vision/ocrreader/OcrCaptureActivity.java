@@ -30,7 +30,6 @@ import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.samples.vision.ocrreader.Carl.MedRef;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSource;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSourcePreview;
-import com.google.android.gms.samples.vision.ocrreader.ui.camera.GasStation;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
@@ -43,7 +42,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import static com.google.android.gms.samples.vision.ocrreader.Utils.TEXTBLOCKARRAY;
-import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStations;
+import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStationsMax;
+import static com.google.android.gms.samples.vision.ocrreader.Utils.gasStationsMin;
 
 /**
  * Activity for the Ocr Detecting app.  This app detects text and displays the value with the
@@ -148,9 +148,12 @@ public final class OcrCaptureActivity extends AppCompatActivity {
 
                     Log.d("important gas prices", gasPrices.toString());
 
+
                     double minPrice = 0.0;
+                    double maxPrice = 0.0;
                     if (gasPrices.size() > 0) {
                         minPrice = gasPrices.get(0);
+                        maxPrice = gasPrices.get(gasPrices.size() - 1);
 
                         if (minPrice > 1000) {
                             minPrice = minPrice / 1000;
@@ -158,8 +161,15 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                             minPrice = minPrice / 100;
                         }
 
-                        gasStations.add(minPrice);
-                        Log.d("Output Station", gasStations.toString());
+                        if (maxPrice > 1000) {
+                            minPrice = maxPrice / 1000;
+                        } else if (maxPrice > 100) {
+                            maxPrice = maxPrice / 100;
+                        }
+
+                        gasStationsMin.add(minPrice);
+                        gasStationsMax.add(maxPrice);
+                        Log.d("Output Station", gasStationsMin.toString());
                     }
                 }
             }
@@ -170,7 +180,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(OcrCaptureActivity.this, gasStations.toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(OcrCaptureActivity.this, gasStationsMin.toString() + gasStationsMax.toString(), Toast.LENGTH_SHORT).show();
             }
         });
     }

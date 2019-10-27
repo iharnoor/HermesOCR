@@ -23,5 +23,6 @@ public class Utils {
 
     public static boolean isOutputReady = false;
 
-    public static HashSet<Double> gasStations = new HashSet<>();
+    public static HashSet<Double> gasStationsMin = new HashSet<>();
+    public static HashSet<Double> gasStationsMax = new HashSet<>();
 }

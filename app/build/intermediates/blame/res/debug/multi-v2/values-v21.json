@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/harnoor/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/71abfa27a838a43f6182791ce6178d75/res/values-v21/values-v21.xml",

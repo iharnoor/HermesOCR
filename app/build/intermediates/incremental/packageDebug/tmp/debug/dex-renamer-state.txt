@@ -1,4 +1,4 @@
-#Sat Oct 26 14:37:59 EDT 2019
+#Sat Oct 26 22:36:43 EDT 2019
 path.1=classes.dex
 path.0=classes.dex
 renamed.10=classes11.dex
@@ -10,19 +10,19 @@ renamed.5=classes6.dex
 renamed.4=classes5.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
-base.9=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/15
+base.9=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/12
 renamed.1=classes2.dex
-base.8=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/18
+base.8=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/11
 renamed.0=classes.dex
-base.7=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/17
-base.6=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/11
-base.5=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/14
-base.4=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/13
-base.3=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/16
-base.2=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/21
-base.1=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/20
-base.0=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/12
-base.10=/Users/harnoor/Documents/GitHub/PharmaPal2/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/19
+base.7=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/14
+base.6=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/13
+base.5=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/16
+base.4=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/15
+base.3=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/18
+base.2=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/17
+base.1=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/19
+base.0=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/21
+base.10=/Users/harnoor/Documents/GitHub/hackgt/app/build/intermediates/transforms/dexMerger/debug/20
 path.10=classes.dex
 path.9=classes.dex
 path.8=classes.dex
